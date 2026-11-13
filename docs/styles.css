@@ -208,3 +208,5 @@ th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px
 .essay article { font-size: 1.08rem; line-height: 1.85; }
 .essay article h1 { font-size: 1.6rem; line-height: 1.4; margin: 0 0 12px; background: linear-gradient(90deg, var(--brand1), var(--brand2), var(--brand3)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .essay article p { margin: 0 0 1em; }
+@media (max-width: 420px) { .bar .actions .icon-btn, .bar .actions .lang-link { width: 44px; min-width: 44px; height: 44px; } .bar .actions .lang-link { width: auto; padding: 0 8px; } .bar h1.brand { font-size: 1.45rem; flex: none; } .bar .actions { margin-left: auto; gap: 0; } }
+@media (max-width: 380px) { .bar { padding-left: 12px; padding-right: 4px; } .bar .actions .icon-btn { width: 40px; min-width: 40px; } .bar h1.brand { font-size: 1.3rem; } }

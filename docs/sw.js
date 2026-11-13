@@ -1,6 +1,6 @@
 // Offline cache for BreathWork (Hindi). Shares the origin with the English site, so only touch our own caches. Bump VERSION when files change.
 const PREFIX = 'breathwork-hi-';
-const VERSION = PREFIX + 'v1.1.0';
+const VERSION = PREFIX + 'v1.1.1';
 const ASSETS = ['./', 'index.html', 'styles.css', 'manifest.webmanifest', 'js/app.js', 'js/domain.js', 'js/cues.js', 'js/store.js', 'js/bg.js', 'js/theme.js', 'essay.html',
   'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-512.png', 'icons/apple-touch-icon.png'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(VERSION).then((c) => c.addAll(ASSETS.map((u) => new Request(u, { cache: 'reload' })))).then(() => self.skipWaiting())); });
